@@ -1,0 +1,10 @@
+services:
+  ollama:
+    image: ollama
+    build:
+      context: macapp
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production
+    ports:
+      - 3000:3000
